@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>远程连接树莓派!</title>
+
+</head>
+
+<script>
+	var cmd = new ActiveXObject("WScript.Shell");
+	function openCmd(){
+		cmd.run("cmd.exe /c mstsc /v:[::]", 0);
+	}
+
+</script>
+
+<body>
+<p>仅支持ie浏览器，且允许ActiveX控件</p>
+<input type="button" onclick="openCmd()" value="远程连接树莓派"/>
+
+</body>
+</html>
